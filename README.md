@@ -2,7 +2,7 @@
 ### -Mascud Isse Nur
 ### -İlayda Alptekin
 
-### Gamehub (E-oyun kataloğu): <br/> Site amacı oyun tanıtımı yapmak ve oynamak istenilen oyunu basit bir arayüzle inceleyebilmek ve bulabilmek.
+### Gamehub (E-oyun kataloğu): <br/> Sitenin amacı oyun tanıtımı yapmak ve oynamak istenilen oyunu basit bir arayüzle inceleyebilmek ve bulabilmektir.
 
 ## App Görevlendirmesi
 |Mascud Isse Nur|İlayda Alptekin|
