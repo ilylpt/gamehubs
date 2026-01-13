@@ -1,8 +1,14 @@
- GameHub
--Mascud Isse Nur
--İlayda Alptekin
- Gamehub (E-oyun kataloğu):Site amacı oyun tanıtımı yapmak ve oynamak istenilen oyunu basit bir arayüzle inceleyebilmek ve bulabilmek.
+# GameHub
+### -Mascud Isse Nur
+### -İlayda Alptekin
 
- App Görevlendirmesi
- Mascud Isse Nur: Gamehub, Accounts.
- İlayda Alptekin:Kategoriler.(Oyunlar ve kategoriler app'i birleştirilip kategoriler adı altında tek bir app'e düşürülmüştür.)
+### Gamehub (E-oyun kataloğu): <br/> Site amacı oyun tanıtımı yapmak ve oynamak istenilen oyunu basit bir arayüzle inceleyebilmek ve bulabilmek.
+
+## App Görevlendirmesi
+|Mascud Isse Nur|İlayda Alptekin|
+| ------------- | ------------- |
+| Gamehub       | Kategoriler   |
+| Accounts      |
+
+
+###### Not:Kategoriler ve oyunlar olarak iki app oluşturulup sonrasında oyunlar app'i kategoriler altına alınmış ve tek bir app de toplanmıştır.
