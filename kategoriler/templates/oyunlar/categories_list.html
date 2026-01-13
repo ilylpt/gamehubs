@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block baslik %}Oyun Kategorileri{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/oyunlar.css' %}">
+{% endblock %}
+
+{% block icerik %}
+<div class="categories-container">
+
+
+    <div class="categories-grid">
+        {% for category in categories %}
+        <div class="category-card">
+            <a href="{% url 'kategoriler:category_detail' category.slug %}">
+                <img src="{{ category.image }}" alt="{{ category.title }}">
+                <div class="category-card-content">
+                    <h3>{{ category.title }}</h3>
+                    <p>{{ category.description|truncatewords:20 }}</p>
+                    <div class="category-game-count">
+                        {{ category.games.count }} Oyun
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% empty %}
+        <div class="empty-state">
+            <p>Henüz kategori eklenmemiş.</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

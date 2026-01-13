@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block baslik %}aksiyon-macera{% endblock %}
+
+{% block icerik %}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oyun Kart </title>
+    
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; 
+            color: #E0E0E0; 
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-box {
+            background-color: #1f2833; 
+            border: 1px solid #45a29e; /* Çerçeve */
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px; 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Gölge */
+            transition: transform 0.3s, box-shadow 0.3s; 
+        }
+
+        .category-box:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        .category-box img {
+              width: 100%;
+              height: 200px;      
+               object-fit: cover;  
+               border-radius: 8px;
+        }
+
+        .category-box h3 {
+            color: #00BCD4; 
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .category-box p {
+            font-size: 0.9em;
+            color: #B0B0B0;
+            margin-bottom: 20px;
+        }
+
+        .button-text {
+            display: inline-block;
+            background-color: #00BCD4; 
+            color: #121212; 
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: default; 
+        }
+    </style>
+</head>
+<body>
+    <br>
+<center><h1>Aksiyon ve Macera Oyunları</h1></center>
+<div style="display: flex; justify-content: center; gap: 40px; padding: 40px; background-color: #121212;">
+
+    <div class="category-box">
+        <img src="https://images.gog.com/4e4a271012eee28f1070a8b907d7c5f9b041d2c656c8839e9f05d8f0eb13e1b1_glx_vertical_cover.webp?namespace=gamesdb" alt="god of war2 Görseli">
+        <h3>God of War II</h3>
+        <div><a href="{% url 'god_of_war2'%}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://cdn1.epicgames.com/offer/b2818b59c0bb420e9647983dfd254931/EGS_Octopus_InsomniacGamesNixxesSoftware_S2_1200x1600-5831c61378872a1fe233b295fbf3140f" alt="spiderman Görseli">
+        <h3>Spider-Man II</h3>
+        <div><a href="{% url 'spiderman2'%}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://imgproxy.eneba.games/FMyitd5Pb-A9yq1Ac4_qATlzPQTho9N0gWqZ75saZ0o/rs:fit:350/ar:1/czM6Ly9wcm9kdWN0/cy5lbmViYS5nYW1l/cy9wcm9kdWN0cy9i/dDdVTUJuWGNtRUdY/bFJCdlNtaWlEUnIz/eE1PSWFoQW9Ma0No/V3NzRkw4LmpwZWc" alt="we here Görseli">
+        <h3>We Were Here Together</h3>
+        <div><a href="{% url 'we_were_here_together'%}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://cdn.itemsatis.com/uploads/images/battlefield-6-pc-ea-app-cd-key.jpg" alt=" Görseli">
+        <h3>BattleField 6 </h3>
+        <div><a href="{% url 'battlefield6'%}" class="btn">İncele</a></div>
+    </div>
+
+     <div class="category-box">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1888930/header.jpg?t=1750959031" alt="Görseli">
+        <h3>The Last Of Us Part 1</h3>
+        <div><a href="{% url 'thelastofus'%}" class="btn">İncele</a></div>
+    </div>
+
+</div>
+
+
+<div style="display: flex; justify-content: center; gap: 40px; padding: 40px; background-color: #121212;">
+
+    <div class="category-box">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1681430/capsule_616x353.jpg?t=1760345165" alt=" Görseli">
+        <h3>RoboCop</h3>
+        <div><a href="{% url 'robocop'%}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://cdn1.epicgames.com/spt-assets/ec961a13750b4d1da6881b1ca0eaecab/007-first-light-w8t07.jpg" alt=" Görseli">
+        <h3>007 First Life</h3>
+        <div><a href="{% url 'first_life'%}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://cdn1.epicgames.com/spt-assets/prod-nemesia/vampire-the-masquerade--bloodlines-2-1fvel.jpg" alt=" Görseli">
+        <h3>Vampire: The Masquerade-Bloodlines 2</h3>
+        <div><a href="{% url 'bloodlines2'%}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1659420/capsule_616x353_turkish.jpg?t=1751913411" alt=" Görseli">
+        <h3>Uncharted Legacy of Thieves Collection</h3>
+        <div><a href="{% url 'uncharted' %}" class="btn">İncele</a></div>
+    </div>
+
+     <div class="category-box">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/22dd5a52e39a1952e77da2bd4ee49cc2e5e1a972/capsule_616x353.jpg?t=1753912780" alt=" Görseli">
+        <h3>Hogwarts Legacy</h3>
+        <div><a href="{% url 'hogwarts_legacy' %}" class="btn">İncele</a></div>
+    </div>
+
+</div>
+</body>
+
+</body>
+</html>
+     
+{% endblock %}

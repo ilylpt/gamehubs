@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}GameHub | Oyunun Merkezi{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    {% block extra_css %}{% endblock %}
+
+    {% block baslik %}{% endblock %}
+</head>
+<body>
+
+    {% include 'navbar.html' %} 
+
+
+
+     <main>
+        {% block icerik %}
+        
+        {% endblock %}
+    </main>  
+    
+   
+
+    {% include 'footer.html' %}
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

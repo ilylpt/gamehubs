@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Ana Sayfa - GameHub{% endblock %}
+
+{% block icerik %}
+
+    <section id="home">
+        <h1>Oyun Dünyasının<br>Merkezine Hoş Geldiniz</h1>
+        <p>GameHub ile en yeni incelemelere ulaşın, turnuvalara katılın ve oyuncu topluluğunun bir parçası olun. Sınırları zorlamaya hazır mısın?</p>
+        <a href="{% url 'kategoriler:kategoriler' %}" class="btn">Keşfetmeye Başla</a>
+    </section>
+
+
+
+     <section id="about" style="padding-top: 150px;">
+        <div class="about-image">
+             <img src="{% static 'images/resim2.jpg' %}" alt="Gaming Setup">
+        </div>
+        <div class="about-content">
+            <h2 class="section-title" style="text-align: left;">Biz <span>Kimiz?</span></h2>
+            <p>GameHub, 2024 yılında tutkulu oyuncular tarafından, yine oyuncular için kurulmuş profesyonel bir platformdur.</p>
+            <br>
+            <p>Amacımız, oyun dünyasındaki en son gelişmeleri, donanım incelemelerini ve e-spor haberlerini tek bir çatı altında toplamaktır. Profesyonel kadromuz ile oyun deneyiminizi bir üst seviyeye taşımak için buradayız.</p>
+            <br>
+            <a href="#" class="btn">Ekibimize Katıl</a>
+        </div>
+    </section>
+
+{% endblock %}

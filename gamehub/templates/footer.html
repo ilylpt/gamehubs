@@ -1,0 +1,48 @@
+{% load static %}
+<footer class="gamehub-footer">
+    <div class="footer-container">
+        
+        <div class="footer-col logo-col">
+            <h3 class="footer-logo">GAME<span>HUB</span></h3>
+            <p>İletişim için buraya tıkla</p>
+            <div class="social-icons">
+                <a href="#" class="social-icon" aria-label="github"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="social-icon" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Hızlı Bağlantılar</h4>
+            <ul>
+                <li><a href="{%url 'anasayfa' %}">Ana Sayfa</a></li>
+                <li><a href="{%url 'hakkimizda' %}">Hakkımızda</a></li>
+                <li><a href="{%url 'iletisim' %}">İletişim</a></li>
+                <li><a href="/#">Kullanım Şartları</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Oyun Kategorileri</h4>
+            <ul>
+                <li><a href="#">Aksiyon & Macera</a></li>
+                <li><a href="#">Strateji & Simülasyon</a></li>
+                <li><a href="#">Rol Yapma (RPG)</a></li>
+                <li><a href="#">E-Spor</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Hesabım</h4>
+            <ul>
+                <li><a href="{%url 'login' %}">Giriş Yap</a></li>
+                <li><a href="{%url 'register' %}">Kayıt Ol</a></li>
+                <li><a href="#">Profilim</a></li>
+                <li><a href="#">Destek Merkezi</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</footer>

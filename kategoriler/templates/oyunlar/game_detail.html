@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block baslik %}{{ game.title }}{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/oyunlar.css' %}">
+{% endblock %}
+
+{% block icerik %}
+<div class="game-page-container">
+   
+
+    <main class="game-main-content">
+        <div class="media-container">
+            <div class="video-preview">
+                <iframe width="900" height="506"
+                        src="{{ video_embed_url }}"
+                        title="{{ game.title }} - Video"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        {% if images %}
+        <div class="thumbnail-bar">
+            {% for image in images %}
+            <img src="{{ image.image_url }}"
+                 alt="{{ image.title }}"
+                 width="250"
+                 height="250"
+                 class="thumbnail"
+                 title="{{ image.title }}">
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="game-download-link">
+            <a href="{{ game.download_url }}" target="_blank">
+                🎮 Oyunu Satın Al / İndir
+            </a>
+        </div>
+
+        <section class="game-details-section">
+            <h2>Oyun Hakkında</h2>
+            <p>{{ game.description|linebreaks }}</p>
+        </section>
+    </main>
+</div>
+{% endblock %}

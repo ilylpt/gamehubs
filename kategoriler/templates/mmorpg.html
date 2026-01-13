@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block baslik %}{% endblock %}
+
+{% block icerik %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oyun Kart </title>
+    
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; 
+            color: #E0E0E0; 
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-box {
+            background-color: #1f2833; 
+            border: 1px solid #45a29e; 
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px; 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s; 
+        }
+
+        .category-box:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        .category-box img {
+              width: 100%;
+              height: 200px;      
+               object-fit: cover;  
+               border-radius: 8px;
+        }
+
+        .category-box h3 {
+            color: #00BCD4; 
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .category-box p {
+            font-size: 0.9em;
+            color: #B0B0B0;
+            margin-bottom: 20px;
+        }
+
+        .button-text {
+            display: inline-block;
+            background-color: #00BCD4; 
+            color: #121212; 
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: default; 
+        }
+    </style>
+</head>
+<body>
+<br>
+<center><h1>MMORPG Oyunları</h1></center>
+
+<div style="display: flex; justify-content: center; gap: 40px; padding: 40px; background-color: #121212;">
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmAOJC7xXwMBsESI1s8zkoxtmb9owoAenBeg&s" alt="Görseli">
+        <h3>World of Warcraft</h3>
+        <div><a href="" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://cdn.bynogame.com/product/knight-online-1759417643245.webp" alt=" Görseli">
+        <h3>The Elder Scrolls</h3>
+        <div><a href="" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202010/1322/zz3hYWUBYCDYoe1bwz0sa3Qo.png" alt=" Görseli">
+        <h3>Knight Online</h3>
+        <div><a href="" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://m.media-amazon.com/images/I/71whdsvzYEL._UF1000,1000_QL80_.jpg" alt=" Görseli">
+        <h3>Star Wars: The Old Republic</h3>
+        <div><a href="" class="btn">İncele</a></div>
+    </div>
+
+     <div class="category-box">
+        <img src="https://upload.wikimedia.org/wikipedia/en/5/55/The_Lord_of_the_Rings_Online-_Shadows_of_Angmar_box.jpg" alt="Görseli">
+        <h3>Lord of the Rings Online</h3>
+        <div><a href="" class="btn">İncele</a></div>
+    </div>
+
+</div>
+
+
+<div style="display: flex; justify-content: center; gap: 40px; padding: 40px; background-color: #121212;">
+
+    <div class="category-box">
+        <img src="https://d1k9zgrhyiy8hv.cloudfront.net/blog/tera-04.png" alt=" Görseli">
+        <h3>Tera Online</h3>
+        <div><a href="" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ-X1preM-q3SvSok6Xa5no_v0r4_BIFSs5Q&s" alt=" Görseli">
+        <h3>Archeage</h3>
+        <div><a href="" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202207/0512/COvGFNwqre7OoLmrrvxrY7tc.png?w=240&thumb=false" alt=" Görseli">
+        <h3>Skyforge</h3>
+        <div><a href="" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/8500/c8005f8acbb1e8c7ad990e95668497904c86a855/capsule_616x353.jpg?t=1764078270" alt=" Görseli">
+        <h3>Eve Online</h3>
+        <div><a href="" class="btn">İncele</a></div>
+    </div>
+
+     <div class="category-box">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/9900/9fa71e249779b6443f3f810456e39b76f61ba4de/capsule_616x353.jpg?t=1758644120" alt=" Görseli">
+        <h3>Star Trek Online</h3>
+        <div><a href="" class="btn">İncele</a></div>
+    </div>
+
+</div>
+</body>
+
+</body>
+</html>
+{% endblock %}

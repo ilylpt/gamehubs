@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block baslik %}{% endblock %}
+
+{% block icerik %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oyun Kart </title>
+    
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; 
+            color: #E0E0E0; 
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-box {
+            background-color: #1f2833; 
+            border: 1px solid #45a29e; /* Çerçeve */
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px; 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Gölge */
+            transition: transform 0.3s, box-shadow 0.3s; 
+        }
+
+        .category-box:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        .category-box img {
+              width: 100%;
+              height: 200px;      
+               object-fit: cover;  
+               border-radius: 8px;
+        }
+
+        .category-box h3 {
+            color: #00BCD4; 
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .category-box p {
+            font-size: 0.9em;
+            color: #B0B0B0;
+            margin-bottom: 20px;
+        }
+
+        .button-text {
+            display: inline-block;
+            background-color: #00BCD4; 
+            color: #121212; 
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: default; 
+        }
+    </style>
+</head>
+<body>
+<br>
+<center><h1>Korku Oyunları</h1></center>
+
+<div style="display: flex; justify-content: center; gap: 40px; padding: 40px; background-color: #121212;">
+
+    <div class="category-box">
+        <img src="https://imgproxy.eneba.games/tkw_ygIv7yjdYM5CbbjVodpxLmtzg8agb0olxwReubY/rs:fit:350/ar:1/czM6Ly9wcm9kdWN0/cy5lbmViYS5nYW1l/cy9wcm9kdWN0cy9h/Y2VTSW1Ba1N1ZUNP/SlZTLVd6SjJROXdw/WDZLWlJCT01JSXd2/ajExZG40LmpwZWc" alt="Görseli">
+        <h3>Amnesia: The Dark Descent</h3>
+        <div><a href="{%url 'amnesia' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwZ2RAhMso5sOEUWKLPTv8_zTlE0jcVgZgfw&s" alt=" Görseli">
+        <h3>Dying Light</h3>
+        <div><a href="{%url 'dying_light' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202010/1322/zz3hYWUBYCDYoe1bwz0sa3Qo.png" alt=" Görseli">
+        <h3>Visage</h3>
+        <div><a href="{%url 'visage' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnmA4T6Sjgpm9ECxultVowqGus2dgT1p7XQA&s" alt=" Görseli">
+        <h3>Phasmophobia</h3>
+        <div><a href="{%url 'phasmophobia' %}" class="btn">İncele</a></div>
+    </div>
+
+     <div class="category-box">
+        <img src="https://www.hemenoku.com.tr/wp-content/uploads/2023/09/outlast-oyun-iincelemesi.jpg" alt="Görseli">
+        <h3>Outlast</h3>
+        <div><a href="{%url 'outlast' %}" class="btn">İncele</a></div>
+    </div>
+
+</div>
+
+
+<div style="display: flex; justify-content: center; gap: 40px; padding: 40px; background-color: #121212;">
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZnZ3e4P0vakouQzQjk7gpleNlCpzly74ggA&s" alt=" Görseli">
+        <h3>Dead Space</h3>
+        <div><a href="{%url 'dead_space' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsP0DOS1r_ueq9tHNXfXvUIwmlrvetUod5YA&s" alt=" Görseli">
+        <h3>Resident Evil 7 Biohazard</h3>
+        <div><a href="{%url 'resident_evil' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://eu-images.contentstack.com/v3/assets/blt740a130ae3c5d529/blt9107ae5da0bda5f1/6716621b8a06ada494e066e3/SH2Title.jpg?width=1280&auto=webp&quality=80&disable=upscale" alt=" Görseli">
+        <h3>Silent Hill 2</h3>
+        <div><a href="{%url 'silent_hill2' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://i.redd.it/5mz4fngr8ffe1.jpeg" alt=" Görseli">
+        <h3>Alien Isolation 2</h3>
+        <div><a href="{%url 'alien_isolation2' %}" class="btn">İncele</a></div>
+    </div>
+
+     <div class="category-box">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/594650/header.jpg?t=1758097398" alt=" Görseli">
+        <h3>Hunt Showdown 1896</h3>
+        <div><a href="{%url 'huntdown' %}" class="btn">İncele</a></div>
+    </div>
+
+</div>
+</body>
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block baslik %}{% endblock %}
+
+{% block icerik %}
+
+ <section class="auth-section">
+        <div class="auth-card">
+            <h2 class="auth-title">Yeni Hesap Oluştur</h2>
+
+            {% if messages %}
+                <div class="messages-wrapper" style="margin-bottom: 20px;">
+                    {% for message in messages %}
+                        <div class="custom-alert alert-{{ message.tags }}">
+                            <i class="fas fa-exclamation-circle"></i>
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            
+            
+            <form  method="post" class="auth-form">
+                {% csrf_token %}
+
+                 <div class="form-group">
+                    <label for="firstname">Adinizi</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="adinizi giriniz" required>
+                </div>
+                 <div class="form-group">
+                    <label for="lastname">Soyadiniz</label>
+                    <input type="text" id="last_tname" name="last_name" placeholder="Soyadiniz giriniz" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="id_email">E-posta Adresi</label>
+                    <input type="email" id="id_email" name="email" placeholder=" bir e-posta adresi girin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="id_username">Kullanıcı Adı</label>
+                    <input type="text" id="id_username"  name="username" placeholder="Kullanici adinizi giriniz" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="id_password1">Şifre</label>
+                    <input type="password" id="id_password1"  name="password" placeholder="sifre giriniz" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="id_password2">Şifre (Tekrar)</label>
+                    <input type="password" id="confirm_password" name="confirm_password" placeholder="Şifrenizi tekrar girin" required>
+                </div>
+                
+                <button type="submit" class="btn btn-full">Kayıt Ol</button>
+            </form>
+
+            <div class="auth-footer">
+                <p>Zaten hesabın var mı? <a href="{% url 'login'%}" class="footer-link">Giriş Yap</a></p>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

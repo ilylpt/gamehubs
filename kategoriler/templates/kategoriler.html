@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block baslik %}{% endblock %}
+
+{% block icerik %}
+        <section id="categories1">
+        <h2 class="section-title">Oyun <span>Kategorileri</span></h2>
+        <div class="category-grid">
+            {% for kategori in kategoriler %}
+             <div class="game-card">
+                <h3>{{ kategori.title }}</h3>
+                <img src="{{ kategori.image }}" alt="{{ kategori.title }} görseli"  class="card-image">
+                <p>{{ kategori.description }}</p>
+                <a href="{% url 'oyunlar:category_detail' kategori.slug %}" class="btn">İncele</a>
+            </div>
+            {% endfor %}
+        </div>
+        </section>
+
+{% endblock %}

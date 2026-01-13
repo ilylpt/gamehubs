@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block baslik %}{% endblock %}
+
+{% block icerik %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oyun Kart </title>
+    
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; 
+            color: #E0E0E0; 
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-box {
+            background-color: #1f2833; 
+            border: 1px solid #45a29e; /* Çerçeve */
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px; 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Gölge */
+            transition: transform 0.3s, box-shadow 0.3s; 
+        }
+
+        .category-box:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        .category-box img {
+              width: 100%;
+              height: 200px;      
+               object-fit: cover;  
+               border-radius: 8px;
+        }
+
+        .category-box h3 {
+            color: #00BCD4; 
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .category-box p {
+            font-size: 0.9em;
+            color: #B0B0B0;
+            margin-bottom: 20px;
+        }
+
+        .button-text {
+            display: inline-block;
+            background-color: #00BCD4; 
+            color: #121212; 
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: default; 
+        }
+    </style>
+</head>
+<body>
+    <br>
+<center><h1>Rol Yapma Oyunları</h1></center>
+<div style="display: flex; justify-content: center; gap: 40px; padding: 40px; background-color: #121212;">
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBfdUzjdZLK_9v2nmaabc5wsJydbBp2fBMsA&s" alt="Görseli">
+        <h3>The Witcher 3: Wild Hunt</h3>
+        <div><a href="{%url 'witcher3' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgjH9vVJOGAYBti0bB5yqb9H9AcrDSFMxn8A&s" alt=" Görseli">
+        <h3> Chrono Cross</h3>
+        <div><a href="{%url 'chrono_cross' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://images.gog-statics.com/794ccea9c7d34d5e7346581752bb4c16a7997e43373545f57ccf82f275aebfb6.jpg" alt=" Görseli">
+        <h3> Legend of Grimrock</h3>
+        <div><a href="{%url 'legend_of_grimrock' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPo6dpQUha_kqbSJkI1SUtxsJM7zCQPGEfxg&s" alt=" Görseli">
+        <h3>Final Fantasy IX</h3>
+        <div><a href="{%url 'final_fantasy9' %}" class="btn">İncele</a></div>
+    </div>
+
+     <div class="category-box">
+        <img src="https://image.api.playstation.com/vulcan/img/cfn/11307YAAIxp7MZ2CspnYs9t7Eh7peTJys3KSrDMBplPuTdG0xmlQGSIXvf6-4Z6PhtxTIFymdkdSCH_hRDdI9T7dh-wh_zfu.png" alt="Görseli">
+        <h3> Persona 5 Royal</h3>
+        <div><a href="{%url 'persona5' %}" class="btn">İncele</a></div>
+    </div>
+
+</div>
+
+
+<div style="display: flex; justify-content: center; gap: 40px; padding: 40px; background-color: #121212;">
+
+    <div class="category-box">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/257350/capsule_616x353.jpg?t=1746199025" alt=" Görseli">
+        <h3>Baldur’s Gate II: Shadows of Amn</h3>
+        <div><a href="{%url 'baldurs_gate2' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://m.media-amazon.com/images/I/71XQcMKeK7L._AC_UF894,1000_QL80_.jpg" alt=" Görseli">
+        <h3>Mass Effect 2</h3>
+        <div><a href="{%url 'mass_effect2' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/632470/capsule_616x353.jpg?t=1727256511" alt=" Görseli">
+        <h3>Disco Elysium - The Final Cut</h3>
+        <div><a href="{%url 'disco_elysium' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://image.api.playstation.com/vulcan/img/rnd/202102/1922/ajZXwKlWvBPfznci6hSGZoOr.png" alt=" Görseli">
+        <h3>Stardew Valley</h3>
+        <div><a href="{%url 'stardew_valley' %}" class="btn">İncele</a></div>
+    </div>
+
+     <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ26jug63AUlYUhjaPL2TJQDapbMjjlD4ZbbQ&s" alt=" Görseli">
+        <h3>Pillars of Eternity</h3>
+        <div><a href="{%url 'pillars_of_eternity' %}" class="btn">İncele</a></div>
+    </div>
+
+</div>
+</body>
+
+</body>
+</html>
+{% endblock %}

@@ -1,0 +1,142 @@
+/* --- GENEL AYARLAR --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0b0c10;
+    /* Koyu arka plan (GameHub teması) */
+    color: #c5c6c7;
+    /* Açık gri yazı */
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+/* --- BUTTON STYLES (Genel) --- */
+.btn {
+    padding: 12px 30px;
+    background-color: #66fcf1;
+    /* Neon Mavi (GameHub vurgu rengi) */
+    color: #0b0c10;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 2px solid #66fcf1;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: #66fcf1;
+}
+
+.btn-full {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* --- GİRİŞ FORMU STİLLERİ --- */
+
+.auth-section {
+    padding: 80px 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.auth-card {
+    background-color: #1f2833;
+    /* Orta koyu kart rengi (GameHub teması) */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px rgba(102, 252, 241, 0.15);
+    /* Hafif neon gölge */
+    max-width: 420px;
+    width: 90%;
+    text-align: center;
+}
+
+.auth-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.auth-title ** {
+    color: #66fcf1;
+}
+
+.auth-subtitle {
+    color: #c5c6c7;
+    margin-bottom: 30px;
+}
+
+.auth-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #66fcf1;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    background-color: #0b0c10;
+    border: 1px solid #45a29e;
+    /* Koyu yeşilimsi (GameHub teması) */
+    color: #fff;
+    border-radius: 4px;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #66fcf1;
+    box-shadow: 0 0 8px rgba(102, 252, 241, 0.4);
+}
+
+.auth-footer {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #45a29e;
+    font-size: 0.9rem;
+}
+
+.footer-link {
+    color: #66fcf1;
+    font-weight: 600;
+}
+
+.footer-link:hover {
+    color: #45a29e;
+}
+
+.forgot-password {
+    display: block;
+    text-align: right;
+    margin-bottom: 15px;
+    color: #c5c6c7;
+}

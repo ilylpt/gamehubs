@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block baslik %}{% endblock %}
+
+{% block icerik %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oyun Kart </title>
+    
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; 
+            color: #E0E0E0; 
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-box {
+            background-color: #1f2833; 
+            border: 1px solid #45a29e; /* Çerçeve */
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px; 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Gölge */
+            transition: transform 0.3s, box-shadow 0.3s; 
+        }
+
+        .category-box:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        .category-box img {
+              width: 100%;
+              height: 200px;      
+               object-fit: cover;  
+               border-radius: 8px;
+        }
+
+        .category-box h3 {
+            color: #00BCD4; 
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .category-box p {
+            font-size: 0.9em;
+            color: #B0B0B0;
+            margin-bottom: 20px;
+        }
+
+        .button-text {
+            display: inline-block;
+            background-color: #00BCD4; 
+            color: #121212; 
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: default; 
+        }
+    </style>
+</head>
+<body>
+    <br>
+<center><h1>Strateji Oyunları</h1></center>
+<div style="display: flex; justify-content: center; gap: 40px; padding: 40px; background-color: #121212;">
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRObFe0c0geRDbMpqLIjOdBqy09knSuj0_Y034djINTdSlYFeRWgB4sVX_-g5LvfeUMO5iJPnuDBH3XgNhahfCyUtJEahezWr8VWPvyCD8&s=10" alt="Görseli">
+        <h3>Europa Universalis IV</h3>
+        <div><a href="{% url 'europa4'%}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://image.api.playstation.com/vulcan/ap/rnd/202108/1908/mpajVjNHPQbyZosl14N2HRAg.jpg?w=440" alt=" Görseli">
+        <h3>Crusader Kings III</h3>
+        <div><a href="{% url 'crusader_kings3'%}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://image.api.playstation.com/vulcan/img/cfn/11307KFcs3gBlcheONy-ZOYZ5kplFnq5jXinUSI8HkCc8P2gdI1_32JrKJ-vxns32LjXBcQteG2EOwuzWS_KXqE5VCYFmS4Z.png" alt=" Görseli">
+        <h3>Civilization VI</h3>
+        <div><a href="{% url 'civilization6'%}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnXWHe8mE8dLJxitS3i-Ivuqd9xqMYNjDmFg&s" alt=" Görseli">
+        <h3>Frostpunk 2</h3>
+        <div><a href="{% url 'frostpunk2'%}" class="btn">İncele</a></div>
+    </div>
+
+     <div class="category-box">
+        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/394360/67bbd0057627fc2244793bcdd09260c2539499cf/header.jpg?t=1759231436" alt="Görseli">
+        <h3>Hearts of Iron IV</h3>
+        <div><a href="{% url 'hearts_of_iron4'%}" class="btn">İncele</a></div>
+    </div>
+
+</div>
+
+
+<div style="display: flex; justify-content: center; gap: 40px; padding: 40px; background-color: #121212;">
+
+    <div class="category-box">
+        <img src="https://upload.wikimedia.org/wikipedia/tr/9/9d/Age_of_Mythology_Liner.jpg" alt=" Görseli">
+        <h3>Age of Mythology</h3>
+        <div><a href="{% url 'age_of_mythology'%}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://cdn1.epicgames.com/spt-assets/9618212ee65745f8b61c932898b151dd/manor-lords-9hoxy.jpg"> 
+        <h3>Manor Lords</h3>
+        <div><a href="{% url 'manor_lords'%}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1017900/capsule_616x353.jpg?t=1763053714" alt=" Görseli">
+        <h3>Age of Empires</h3>
+        <div><a href="{%url 'age_of_empires' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiyHGapvm7Kxqm4abADHL-8N6xHP_j0GDdXg&s" alt=" Görseli">
+        <h3>Anno 1800</h3>
+        <div><a href="{%url 'anno_1800' %}" class="btn">İncele</a></div>
+    </div>
+
+     <div class="category-box">
+        <img src="https://www.donanimhaber.com/images/images/haber/133924/1400x788company-of-heroes-2-steam-de-ucretsiz.jpg" alt=" Görseli">
+        <h3>Company of Heroes 2</h3>
+        <div><a href="{%url 'company_of_heroes2' %}" class="btn">İncele</a></div>
+    </div>
+
+</div>
+</body>
+
+</body>
+</html>
+{% endblock %}

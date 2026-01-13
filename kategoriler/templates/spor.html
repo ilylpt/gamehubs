@@ -1,0 +1,146 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block baslik %}{% endblock %}
+
+{% block icerik %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oyun Kart </title>
+    
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; 
+            color: #E0E0E0; 
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .category-box {
+            background-color: #1f2833; 
+            border: 1px solid #45a29e; /* Çerçeve */
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px; 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Gölge */
+            transition: transform 0.3s, box-shadow 0.3s; 
+        }
+
+        .category-box:hover {
+            transform: translateY(-5px); 
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+        }
+
+        .category-box img {
+              width: 100%;
+              height: 200px;      
+               object-fit: cover;  
+               border-radius: 8px;
+        }
+
+        .category-box h3 {
+            color: #00BCD4; 
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .category-box p {
+            font-size: 0.9em;
+            color: #B0B0B0;
+            margin-bottom: 20px;
+        }
+
+        .button-text {
+            display: inline-block;
+            background-color: #00BCD4; 
+            color: #121212; 
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: default; 
+        }
+    </style>
+</head>
+<body>
+    <br>
+<center><h1>Spor Oyunları</h1></center>
+<div style="display: flex; justify-content: center; gap: 40px; padding: 40px; background-color: #121212;">
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1CIfuLIeYZ1IACJqlx1tO87SEutTGOSRNfA&s" alt="Görseli">
+        <h3>Matchpoint</h3>
+        <div><a href="{%url 'matchpoint' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://i.ytimg.com/vi/ugDtMLOyPYA/maxresdefault.jpg" alt=" Görseli">
+        <h3>Grand Mountain Adventure 2</h3>
+        <div><a href="{%url 'grand_mountain' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://cdn2.unrealengine.com/ea-sports-fifa-23-is-coming-to-the-epic-games-store-1920x1080-398e19351a82.jpg" alt=" Görseli">
+        <h3> FIFA 23</h3>
+        <div><a href="{%url 'fifa23' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://image.cnnturk.com/i/cnnturk/75/1200x675/5ae2e335ae784916d494c91d.jpg" alt=" Görseli">
+        <h3>PES 2018</h3>
+        <div><a href="{%url 'pes2018' %}" class="btn">İncele</a></div>
+    </div>
+
+     <div class="category-box">
+        <img src="https://store-images.s-microsoft.com/image/apps.33492.14541251149308229.29aceb44-a9bd-4d54-8f67-2dbca97b2605.316096e8-5ec8-42ea-9677-d1f40e2a8ec1?q=90&w=320&h=180" alt="Görseli">
+        <h3> WRC 9</h3>
+        <div><a href="{%url 'wrc9' %}" class="btn">İncele</a></div>
+    </div>
+
+</div>
+
+
+<div style="display: flex; justify-content: center; gap: 40px; padding: 40px; background-color: #121212;">
+
+    <div class="category-box">
+        <img src="https://img.tamindir.com/resize/1200x675/2025/08/476780/football-manager-2026-ilk-fragman-1.jpg" alt=" Görseli">
+        <h3>Football Manager 2026</h3>
+        <div><a href="{%url 'football_manager2026' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqxjy5t08JXEFhglw8BnITF37YrRKgGzupCQ&s" alt=" Görseli">
+        <h3>EA Sports FC 26</h3>
+        <div><a href="{%url 'ea_sports26' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://www.donanimarsivi.com/wp-content/uploads/2025/01/WWE-2K25.jpg" alt=" Görseli">
+        <h3>WWE 2K25</h3>
+        <div><a href="{%url 'wwe' %}" class="btn">İncele</a></div>
+    </div>
+
+    <div class="category-box">
+        <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1451190/cf157ba961df3d1a1e0223947be631f11571adf8/capsule_616x353.jpg?t=1766067946" alt=" Görseli">
+        <h3>Undisputed</h3>
+        <div><a href="{%url 'undisputed' %}" class="btn">İncele</a></div>
+    </div>
+
+     <div class="category-box">
+        <img src="https://m.media-amazon.com/images/I/81a18aaH48L._AC_UF894,1000_QL80_.jpg" alt=" Görseli">
+        <h3>Way Of The Hunter</h3>
+        <div><a href="{%url 'way_of_the_hunter' %}" class="btn">İncele</a></div>
+    </div>
+
+</div>
+</body>
+
+</body>
+</html>
+{% endblock %}
