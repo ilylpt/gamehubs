@@ -12,8 +12,7 @@
 - **Zaman Tasarrufu Sağlama:**
 Farklı sitelerde uzun araştırmalar yapmak yerine, kullanıcılar bu platformda ihtiyaç duydukları tüm temel bilgileri tek bir yerde bulabilir. Bu durum hem zaman kazandırır hem de karar verme sürecini kolaylaştırır.
 
-* **Geliştirilebilir Yapı:**
-Site altyapısı, yeni oyunların eklenmesine, mevcut içeriklerin güncellenmesine ve kullanıcı ihtiyaçlarına göre geliştirilmesine uygundur.
+
 
 ## App Görevlendirmesi
 |Mascud Isse Nur|İlayda Alptekin|
